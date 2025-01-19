@@ -1,8 +1,8 @@
 {
     "name": "innmind/static-analysis",
     "type": "library",
-    "description": "",
-    "keywords": [],
+    "description": "Meta package to group all dependencies required for innmind packages",
+    "keywords": ["static analysis"],
     "homepage": "http://github.com/innmind/static-analysis",
     "license": "MIT",
     "authors": [
@@ -15,16 +15,6 @@
         "issues": "http://github.com/innmind/static-analysis/issues"
     },
     "require": {
-        "php": "~8.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "innmind\\static-analysis\\": "src/"
-        }
-    },
-    "require-dev": {
-        "vimeo/psalm": "~5.13",
-        "innmind/black-box": "^5.6.1",
-        "innmind/coding-standard": "~2.0"
+        "vimeo/psalm": "~5.13|dev-master"
     }
 }

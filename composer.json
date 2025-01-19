@@ -16,5 +16,6 @@
     },
     "require": {
         "vimeo/psalm": "~5.13|dev-master"
-    }
+    },
+    "minimum-stability": "dev"
 }

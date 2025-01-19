@@ -1,4 +1,0 @@
-ignore:
-    - fixtures/**/*
-    - properties/**/*
-github_checks: false

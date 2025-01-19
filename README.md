@@ -1,17 +1,33 @@
 # static-analysis
 
-[![Build Status](https://github.com/innmind/static-analysis/workflows/CI/badge.svg?branch=main)](https://github.com/innmind/static-analysis/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/innmind/static-analysis/branch/develop/graph/badge.svg)](https://codecov.io/gh/innmind/static-analysis)
-[![Type Coverage](https://shepherd.dev/github/innmind/static-analysis/coverage.svg)](https://shepherd.dev/github/innmind/static-analysis)
-
-Description
+This is a meta package to alias all the dependencies required for Innmind packages to run static analysis.
 
 ## Installation
 
 ```sh
-composer require innmind/static-analysis
+composer require --dev innmind/static-analysis
 ```
 
 ## Usage
 
-Todo
+Once the package is required you need to create the file `psalm.xml` with the following content:
+
+```xml
+<?xml version="1.0"?>
+<psalm
+    errorLevel="1"
+    resolveFromConfigFile="true"
+    findUnusedBaselineEntry="true"
+    findUnusedCode="false"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+</psalm>
+```

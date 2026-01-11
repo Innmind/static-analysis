@@ -15,7 +15,7 @@
         "issues": "http://github.com/innmind/static-analysis/issues"
     },
     "require": {
-        "vimeo/psalm": "^6.14.2",
+        "vimeo/psalm": "^6.14.3",
         "amphp/dns": "^2.1.2",
         "amphp/cache": "^2.0.1",
         "amphp/socket": "^2.3.1"

@@ -2,7 +2,9 @@
     "name": "innmind/static-analysis",
     "type": "library",
     "description": "Meta package to group all dependencies required for innmind packages",
-    "keywords": ["static analysis"],
+    "keywords": [
+        "static analysis"
+    ],
     "homepage": "http://github.com/innmind/static-analysis",
     "license": "MIT",
     "authors": [
